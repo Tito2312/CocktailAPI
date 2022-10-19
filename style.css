@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0
 }
-
+@font-face {
+    font-family: 'fuenteCocktail';
+    src: url(/fuentes/Cocktail.ttf);
+}
 body {
     width: 100wv;
     display: flex;
@@ -14,12 +17,26 @@ body {
 header{
 
     width: 100%;
-    
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'fuenteCocktail';
+    color: #9B8D9B;
+}
+
+h1{
+    padding:10px;
+    width: 65%;
+    text-align: center;
+    background-color: #46001f;
+    border-radius: 20px;
+    font-size:55px;
 }
 
 main{
 
-    width: 68%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,9 +54,10 @@ main{
     font-size: 19px;
 }
 
+
 #container-cocktail{
     margin-top:2%;
-    width: 90%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -47,7 +65,7 @@ main{
 
 .drinks{
 
-    width: 23%;
+    width: 30%;
     height: 290px;
     display: flex;
     flex-direction: column;
@@ -59,8 +77,21 @@ main{
 
 }
 
-.img{
+.name{
 
-    width: 100%;
-    height: 80%;
+    background-color: #950125;
+    border-radius:20px 20px 0 0;
 }
+.name:hover{
+    cursor: pointer;
+    color: #C39D37;
+}
+
+.img{
+    cursor: pointer;
+    width: 100%;
+    height: 95%;
+    border-radius: 0 0 20px 20px;
+}
+
+
